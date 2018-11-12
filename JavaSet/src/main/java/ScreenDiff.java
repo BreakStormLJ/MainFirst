@@ -23,7 +23,7 @@ public class ScreenDiff {
 //        System.out.println(set);
 //        System.out.println("这条句子中不同单词的个数："+set.size());
         map(stat);
-        //wordfre(stat);
+        wordfre(stat);
         /*List<String> list=new ArrayList();
         list.add("a");
         list.add("b");
