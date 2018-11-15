@@ -24,13 +24,6 @@ public class ScreenDiff {
 //        System.out.println("这条句子中不同单词的个数："+set.size());
         map(stat);
         wordfre(stat);
-        /*List<String> list=new ArrayList();
-        list.add("a");
-        list.add("b");
-        list.get(0);
-        Collections.sort(list);
-        Set<String> set=new HashSet();
-        set.add("a");*/
     }
 
     public static void map(String stat){
@@ -62,7 +55,7 @@ public class ScreenDiff {
     public static void wordfre(String stat){
         String[] array = stat.split("\\s+");
         Map<String,Integer> map = new HashMap();
-        int val = 1;
+        int val;
         for (String ss:array){
 
             if (map.containsKey(ss)){
@@ -76,4 +69,12 @@ public class ScreenDiff {
 
         System.out.println(map);
     }
+
+    /*List<String> list=new ArrayList();
+    list.add("a");
+    list.add("b");
+    list.get(0);
+    Collections.sort(list);
+    Set<String> set=new HashSet();
+    set.add("a");*/
 }
