@@ -46,8 +46,6 @@ public class ScreenDiff {
                 }
                 map.put(path1,count);
             }
-
-
         }
         System.out.println(map);
     }
