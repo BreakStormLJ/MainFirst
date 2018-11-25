@@ -1,5 +1,11 @@
 import java.util.*;
 
+/**
+ * Demo class
+ *
+ * @author liujin
+ * @date 2018/11/24
+ */
 public class ScreenDiff {
     public static void main(String[] args) {
         String stat = "CREATE TABLE select id CREATE TABLE select id CREATE TABLE select id";
@@ -9,19 +15,14 @@ public class ScreenDiff {
         Map map = new HashMap();
         int i = 0;
         for (String ss: array){
-            //System.out.println(ss);
             i++;
             map.put(i,ss);
             list.add(ss);
             set.add(ss);
 
         }
-//        System.out.println(map);
-//        System.out.println("这条句子中单词的总数为："+map.size());
         System.out.println(list);
         System.out.println("这条句子中单词的总数为："+list.size());
-//        System.out.println(set);
-//        System.out.println("这条句子中不同单词的个数："+set.size());
         map(stat);
         wordfre(stat);
     }
@@ -42,7 +43,9 @@ public class ScreenDiff {
             if (list.contains(path1)){
                 for (String path2:list){
                     System.out.println(path2);
-                    if (path1.equals(path2)) ++count;
+                    if (path1.equals(path2)) {
+                        ++count;
+                    }
                 }
                 map.put(path1,count);
             }
@@ -67,7 +70,6 @@ public class ScreenDiff {
 
         System.out.println(map);
     }
-
     /*List<String> list=new ArrayList();
     list.add("a");
     list.add("b");
