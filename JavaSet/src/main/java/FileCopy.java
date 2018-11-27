@@ -5,8 +5,8 @@ public class FileCopy {
         // src 源目录，dest 目标目录
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\audio");
         File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform");*/
-        File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\effect\\sfx");
-        File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\effect");
+        /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\effect\\sfx");
+        File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\effect");*/
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\effect\\skill");
         File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\effect");*/
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\scene\\map");
@@ -27,8 +27,8 @@ public class FileCopy {
         File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");*/
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\buff_icon");
         File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");*/
-        /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\item");
-        File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");*/
+        File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\item");
+        File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\level");
         File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");*/
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\pet_equip");

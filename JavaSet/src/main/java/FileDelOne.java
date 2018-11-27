@@ -4,7 +4,7 @@ public class FileDelOne {
     public static void main(String[] args) {
         //String url = "";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\audio";
-        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\effect\\sfx";
+        //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\effect\\sfx";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\effect\\skill";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\role\\monster";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\role\\npc";
@@ -15,7 +15,7 @@ public class FileDelOne {
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\scene\\minimap";
 //        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\boss_icon";
 //        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\buff_icon";
-        //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\item";
+        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\item";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\level";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\pet_equip";
 //        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\pet_icon";
