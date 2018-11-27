@@ -1,0 +1,13 @@
+一.puremvc 是 ria比较常用的一个mvc框架，协助程序员区分各个模块，主要是解耦
+
+二.puremvc的结构：
+  1.Facade(单例), 框架的入口
+  2.Controller(单例), 管理 Command
+  3.Command(非单例), 和某个Notification绑定;动态创建，生命周期执行完就结束。用于各个 Mediator、Proxy对象交互时
+  4.View(单例), 管理 Mediator
+  5.Mediator(非单例), 管理某个viewComponent;接受Notification;是view 和其它模块( Model、Controller )交互的 接口。尽量不要在Mediator中修改Proxy的value object; 禁止Mediator之前的直接交互
+  6.ViewComponent, 视图组件(Scene/Layer/Butten...), 只提供和视图相关的代码
+  7.Model(单例), 管理 Proxy
+  8.Proxy(非单例), 管理某个 ValueObject, 提供VO的接口，使外界不知道VO的实现细节；只是和数据相关的代码
+  9.通信机制:Notifacation(订阅者模式)
+

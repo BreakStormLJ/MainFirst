@@ -1,0 +1,23 @@
+1.适应现在的C++的UI结构,各个UI 的zOrder：
+  UI 的层次还是基于 sceneGraph 
+  layersui: 还是有个UINode，所有的layersui都挂在UINode下
+  mainui: 和c++一样
+
+  lua 的layersui 的zOrder，介于C++的 mainui 和 layersui之间
+
+
+2.所有UI Layer的 zOrder, 都统由 LayerFacadeMediator 来管理
+
+3.然后分辨率策略逻辑移到 ChangeResolutionCommand
+
+4.Lua UI类的 "继承关系":
+  SomeLayer  -->  BaseLayer  -->  cc.Layer  (范例:TransferLayer)
+  SomeMultiPanelLayer  -->  MultiPanelLayer  -->  BaseLayer  --> cc.Layer  (范例: LoginLayer) 
+  SomePanel  -->  BasePanel
+
+  panel 和 multiPanelLayer 是搭配在一起的
+
+
+5.UI的逻辑类Mediator 的"继承关系"：
+  SomeMediator  --> BaseUIMediator  -->  DebugMediator  --> Mediator
+

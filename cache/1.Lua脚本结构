@@ -1,0 +1,15 @@
+cocos2d                 // cocos2d 的一些常量以及 util
+config                  // 一些常量配置
+framework               // puremvc 框架
+fsm                     // 状态机
+game                    // 游戏逻辑代码
+  patterns              // 根据puremvc划分的逻辑
+    command             // controller 部分
+    mediator            // view 逻辑 模块
+    proxy               // model 逻辑 模块
+  ui                    // view 的显示 模块
+  valueobject           // model 纯数据 模块
+init                    // 各个模块的初始化代码
+network                 // 网络相关
+thirdparty              // 第三方库
+util                    // 自己的一些 util

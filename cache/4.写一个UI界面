@@ -1,0 +1,14 @@
+1.保持同现在的C++ 界面一致，分为:
+  简单界面(BaseLayer)，不需要拆分
+  复杂界面(MultiPanelLayer)，需要拆成多个Panel
+
+2.所有的界面(view) 都对应一个 Mediator(Controller)
+
+3.简单界面见 TransferLayer
+
+4.复杂界面见 LoginLayer
+  复杂界面需要在Layer里声明 panel类型枚举(_ePanelType)，以及每个panel的Event(点击之类的)
+
+5.复杂/简单界面 都需要在对应的Mediator：
+  _type = value;   // 界面类型，同时代表了界面zOrder        见 global.UIZ
+  _layer = value;  // 界面对象持有

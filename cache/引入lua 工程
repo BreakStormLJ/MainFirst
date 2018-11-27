@@ -1,0 +1,45 @@
+引入lua 工程
+
+	首先确保cocos2d里面
+		1.cocos/scripting/lua-bindings 工程存在
+		2.external/lua 存在
+
+xcode 工程引入 lua
+	1.引入cocos2d_lua_bindings.xcodeproj		(cocos2d自己封装的luajit，用于快速binding)
+		cocos2d/cocos/scripting/lua-binding
+	2.链接库 加入 libluabindings
+
+	3.添加lua库路径(确保prebuild已经编译有.a)
+		$(SRCROOT)/../cocos2d/external/lua/luajit/prebuilt/ios
+		$(SRCROOT)/../cocos2d/external/lua/lua/prebuilt/ios
+
+	4.添加 class文件 路径
+		$(SRCROOT)/../cocos2d/external/lua/luajit/include
+		$(SRCROOT)/../cocos2d/external/lua/tolua
+		$(SRCROOT)/../cocos2d/cocos/scripting/lua-bindings/manual
+		$(SRCROOT)/../cocos2d/cocos/scripting/lua-bindings/auto
+
+eclipse 引入 lua
+	1.LOCAL_WHOLE_STATIC_LIBRARIES += cocos_lua_static
+	2.$(call import-module,scripting/lua-bindings)
+    
+
+visual studio 引入 工程
+    1.添加lua库工程
+        cocos2d/cocos/scripting/lua-binding
+    2.lua库
+        build event 
+        if not exist "$(OutDir)" mkdir "$(OutDir)"
+        xcopy /Y /Q "$(EngineRoot)external\lua\luajit\prebailt\win32*.*" "$(OutDir)"
+    3.链接库：lua51.lib
+    4.各类lua路径
+        $(EngineRoot)cocos\scripting\lua-bindings\auto
+        $(EngineRoot)cocos\scripting\lua-bindings\manual
+        $(EngineRoot)external\lua\lua
+        $(EngineRoot)external\lua\tolua
+        $(EngineRoot)external\lua\luajit\include
+
+
+若引入第三方lua库，需要
+android: 更改 makefile
+xcode: luabinding工程的build phases增加编译文件
