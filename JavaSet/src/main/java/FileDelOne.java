@@ -13,9 +13,9 @@ public class FileDelOne {
 //        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\role\\wings";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\scene\\map";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\scene\\minimap";
-//        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\boss_icon";
+        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\boss_icon";
 //        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\buff_icon";
-        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\item";
+        //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\item";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\level";
         //String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\pet_equip";
 //        String url = "F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310\\pet_icon";
