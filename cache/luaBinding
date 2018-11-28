@@ -1,5 +1,0 @@
-首先在cocos2d/tools/tolua 目录下
-
-1.编写 暴露接口规则的 ini文件
-2.修改 genbindings_custom.py 文件的 cmd_args
-3.用命令行进入 cocos2d/tools/tolua 目录，执行genbindings_custom.py
