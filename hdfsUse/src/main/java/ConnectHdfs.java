@@ -1,3 +1,5 @@
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -5,27 +7,29 @@ import org.apache.hadoop.fs.Path;
 
 import java.io.IOException;
 import java.net.URI;
-import java.net.URISyntaxException;
 
 public class ConnectHdfs {
+//    public static final Log LOG = LogFactory.getLog(ConnectHdfs.class);
     public static void main(String[] args) {
         Configuration conf = new Configuration();
         String hdfsUserName = "root";
-        URI hdfsUri = null;
-        try {
-            hdfsUri = new URI("hdfs://10.2.223.242:50070");
+//        URI hdfsUri = null;
+       /* try {
+//            hdfsUri = new URI("hdfs://10.2.223.242:50070");
         }catch (URISyntaxException e){
             e.printStackTrace();
             //logger.error(e);
-        }
+        }*/
         try {
-            FileSystem fs = FileSystem.get(hdfsUri,conf,hdfsUserName);
-            checkThisFile(fs);
+            FileSystem fs = FileSystem.get(URI.create("hdfs://10.2.223.242:8020/user"),conf);
+            fs.exists(new Path("/user/liujin"));
+//            FileSystem fs=FileSystem.get(conf);
+//            checkThisFile(fs);
         }catch (IOException e){
+//           LOG.error(e.getMessage());
+        }/*catch (InterruptedException e){
             e.printStackTrace();
-        }catch (InterruptedException e){
-            e.printStackTrace();
-        }
+        }*/
 
     }
 
@@ -34,7 +38,7 @@ public class ConnectHdfs {
         boolean isDirectory =false;
         boolean isFile = false;
 
-        Path path = new Path("/test/hdfs-site.xml");
+        Path path = new Path("hdfs://10.2.223.242:50070/test/hdfs-site.xml");
 
         try {
             isExists = fs.exists(path);
