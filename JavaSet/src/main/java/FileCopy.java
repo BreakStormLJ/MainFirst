@@ -23,12 +23,12 @@ public class FileCopy {
         File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\role");*/
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\role\\wings");
         File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\role");*/
-        /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\boss_icon");
-        File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");*/
+        File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\boss_icon");
+        File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\buff_icon");
         File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");*/
-        File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\item");
-        File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");
+        /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\item");
+        File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");*/
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\level");
         File dest = new File("F:\\XueYin_Project\\xycq_res\\stab\\platform\\ui_cocos310");*/
         /*File src = new File("F:\\XueYin_Svn\\resource\\美术资源\\stab\\platform\\ui_cocos310\\pet_equip");
